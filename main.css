@@ -1,0 +1,353 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Calibri, sans-serif;
+}
+
+.header {
+    border-bottom: 2px solid #1e1f6d;
+    display: flex;
+    background-color: #fefefe;
+    width: 1000px;
+    margin: 0px auto;
+}
+.column {
+    /*border: 1px solid black;*/
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.page .column {
+    height: 100vh;
+}
+#logo-i-social {
+    display: flex;
+}
+#logo-holder {
+    flex-grow: 1;
+}
+#logo-holder img {
+    width: 100px;
+    height: 70px;
+}
+#social-holder {
+    flex-grow: 1;
+    text-align: right;
+}
+#social-holder a {
+    text-decoration: none;
+}
+#social-holder a img {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+#main-manu {
+    display: flex;
+}
+#main-manu a {
+    flex-grow: 1;
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #1e1f6d;
+    transition: 300ms;
+}
+#main-manu a:hover,
+#main-manu a.active {
+    background: #1e1f6d;
+    color: #fff;
+}
+#home {
+    color: white;
+    text-align: center;
+    background: url('assets/img/background/bg1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+#home h1 {
+    font-size: 48pt;
+    margin-top: 0%;
+    padding-top: calc(50vh - 350px);
+}
+.dark-box {
+    background-color: #33333330;
+    border: 1px solid #fff;
+    font-size: 24pt;
+    padding: 30px;
+}
+#about h2 {
+    padding-top: 20px;
+}
+#services {
+    background: url('assets/img/background/bg2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+#services img {
+    width: 300px;
+    height: 200px;
+}
+#services h2 {
+    padding-top: 40px;
+}
+.service-row {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+.service-row > div {
+    text-align: center;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #fff;
+}
+.service-row > div > img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+.service-row > div > p {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 10px;
+    background-color: #ffffffC0;
+    margin-bottom: 0px;
+    color: black;
+    font-weight: bold;
+    border-top: 1px solid #fff;
+}
+#career {
+    background: url('assets/img/background/bg3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.align-center {
+    text-align: center;
+}
+.align-right {
+    text-align: right;
+}
+.align-left {
+    text-align: left;
+}
+.circles {
+    display: flex;
+    margin: 50px 0;
+}
+.circle-holder {
+    flex-grow: 1;
+    text-align: center;
+}
+.circle {
+    background: #dc0101;
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 25%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.mark {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.technologies {
+    display: flex;
+    margin: 50px 0;
+}
+.technology {
+    flex-grow: 1;
+    text-align: center;
+}
+.technology img {
+    width: 48px;
+    height: 48px;
+}
+.technology p {
+    font-weight: bold;
+}
+#products  h2 {
+    padding-top: 50px;
+}
+.matrix {
+    margin-top: 40px;
+    height: 500px;
+    display: grid;
+    grid-template: " a b c "
+                   " d b e "
+                   " f f g ";
+    align-content: space-between;
+    justify-content: space-between;
+}
+#product_a {
+    grid-area: a;
+}
+#product_a img{
+    height: 150px;
+    width: 300px;
+}
+#product_b {
+    grid-area: b;
+}
+#product_b img {
+    width: 300px;
+}
+#product_c {
+    grid-area: c;
+}
+#product_c img {
+    height: 150px;
+    width: 300px;
+}
+#product_d {
+    grid-area: d;
+}
+#product_d img{
+    height: 150px;
+    width: 300px;
+}
+#product_e {
+    grid-area: e;
+}
+#product_e img{
+    height: 150px;
+    width: 300px;
+}
+#product_f {
+    grid-area: f;
+}
+#product_f img{
+    height: 150px;
+}
+#product_g {
+    grid-area: g;
+}
+#product_g img{
+    height: 150px;
+    width: 300px;
+}
+.product {
+    display: grid;
+    grid-template: "region";
+    align-content: stretch;
+    justify-content: stretch;
+}
+.product img {
+    grid-area: region;
+    justify-self: stretch;
+    align-self: stretch;
+}
+.product .text-holder {
+    grid-area: region;
+    justify-self: stretch;
+    align-self: stretch;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #dc0101DD;
+    color: #fff;
+    opacity: 0.0;
+    transition: 500ms;
+}
+.product:hover .text-holder {
+    opacity: 1.0;
+}
+.career-columns {
+    display: flex;
+}
+.job-list {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.job-descriptions {
+    flex-grow: 2;
+    flex-basis: 0;
+}
+#career h2 {
+    padding-top: 50px;
+    color: #fff;
+}
+.job-list label {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    background-color: #ffffff70;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.job-descriptions input {
+    display: none;
+}
+.job-descriptions .job-description {
+    display: none;
+}
+.job-descriptions input:checked + .job-description {
+    display: block;
+}
+.job-description {
+    display: block;
+    margin-left: 10px;
+    border: 1px solid #fff;
+    background-color: #ffffff70;
+    padding: 10px;
+    font-size: 20px;
+}
+#contact h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.contact-reg {
+    display: grid;
+    grid-template: "adress map"
+                   "mail   map";
+    grid-template-columns: 300px 1fr;
+
+}
+.contact-adress {
+    grid-area: adress;
+    padding-bottom: 15px;
+
+}
+.contact-mails {
+    grid-area: mail;
+}
+.contact-map {
+    grid-area: map;
+}
+.footer {
+    border-top: 3px solid #dc0101;
+    background-color: #fefefe;
+}
+.footer > .column {
+    display: flex;
+}
+.footer .footer-column {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.red-link {
+    text-decoration: none;
+    color: #dc0101;
+}
+.red-link:hover {
+    text-decoration: underline;
+}
